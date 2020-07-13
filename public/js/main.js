@@ -12,7 +12,7 @@ myform.addEventListener('submit', (e) => {
 
     message.innerText = "Loading..";
     let location = document.getElementById("address").value;
-    let url = `http://localhost:3000/weather?address=${location}`;
+    let url = `/weather?address=${location}`;
 
     fetch(url).then( (res) => {
         res.json().then( (data) => {
